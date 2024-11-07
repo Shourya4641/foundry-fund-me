@@ -3,4 +3,10 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+fs_permissions = [{ access = "read", path = "./broadcast" }, {access = "read", path = "./Images/"}]
+# remappings = [
+#   '@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/src/',
+# ]
+# ffi = true        this implies that we are allowing foundry to run scripts in our machine directly, so try to keep it off 
+#                    untill it is actually required.
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
